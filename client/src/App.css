@@ -1,0 +1,29 @@
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+input {
+  color: white;
+}
+.custom-file-input::before {
+  content: "Select some files";
+  color: white;
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: none;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 10pt;
+  background-color: #08c;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
